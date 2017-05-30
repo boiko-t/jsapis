@@ -1,0 +1,15 @@
+.center {
+    margin: 10px 20px;
+}
+
+.top-margin {
+    margin-top: 20px;
+}
+
+.bottom-margin {
+    margin-bottom: 20px;
+}
+
+#map {
+    height: 300px;
+}
