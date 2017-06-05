@@ -51,6 +51,8 @@ function doSearch() {
 
 function startSearch(e) {
     e.target.disabled = true;
+    firstNumberInput.disabled = true;
+    secondNumberInput.disabled = true;
     worker = new Worker('script/PrimeSearcher.js');
     if(isPrimeSearchFinished) {
         lastFoundPrime = firstNumberInput.value;
@@ -92,7 +94,8 @@ function finishSearch() {
     startSearchButton.disabled = false;
     isPrimeSearchFinished = true;
     alertNotification('Пошук завершено!');
-
+    firstNumberInput.disabled = false;
+    secondNumberInput.disabled = false;
 }
 
 function alertNotification(message) {
