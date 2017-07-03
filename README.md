@@ -1,4 +1,4 @@
-# jsapis
+# HTML5 APIs
 Testing and trying out some popular HTML5 API.
 ##### The following APIs are used
 - Web Worker
